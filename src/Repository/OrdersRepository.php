@@ -19,6 +19,22 @@ class OrdersRepository extends ServiceEntityRepository
         parent::__construct($registry, Orders::class);
     }
 
+    
+    public function findOrdersInfosById($id)
+    {
+        $conn = $this->getEntityManager()->getConnection();
+        
+        $sql = 'select * from orders o, customers c, orders_products op, products p
+                where o.customer_id = c.id
+                and o.id = op.orders_id
+                and op.products_id = p.id
+                and o.id = :id';
+        
+        $stmt = $conn->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        
+        return $stmt->fetchAll();
+    }
     // /**
     //  * @return Orders[] Returns an array of Orders objects
     //  */

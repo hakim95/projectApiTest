@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <table>
+        <tr>
+            <td>Nom : {{ orderInfos[0].lastname }} </td>
+        </tr>
+        <tr>
+            <td>Prénom : {{ orderInfos[0]['firstname'] }} </td>
+        </tr>
+        <tr>
+            <td>Adresse : {{ orderInfos[0]['address'] }}</td>
+        </tr>
+        <tr>
+            <td>Code postal : {{ orderInfos[0]['postcode'] }}</td>
+        </tr>
+        <tr>
+            <td>Ville : {{ orderInfos[0]['city'] }}</td>
+        </tr>
+        <tr>
+            <td>Pays : {{ orderInfos[0]['country'] }}</td>
+        </tr>
+        <tr>
+            <td>Numéro de téléphone : {{ orderInfos[0]['phone'] }}</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        {% for orderInfo in orderInfos %}
+            <tr>
+                <td>{{ orderInfo.name }}</td>
+                <td>{{ orderInfo.description }}</td>
+                <td>{{ orderInfo.priceht }} €</td>
+                <td>{{ orderInfo.pricettc }} €</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
