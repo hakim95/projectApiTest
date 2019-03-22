@@ -81,7 +81,7 @@ class OrdersController extends AbstractController
     }
     
     /**
-     * Get details of an order
+     * Get order details
      * 
      * @Route("/api/orders/{orderid}", name="order", methods={"GET"}) 
      * @SWG\Response(
@@ -111,8 +111,18 @@ class OrdersController extends AbstractController
                 'city' => $orderResult->getCustomer()->getCity(),
                 'country' => $orderResult->getCustomer()->getCountry(),
                 'phone' => $orderResult->getCustomer()->getPhone()
-            )
+            ),
+            'products' => array()
         );
+        
+        foreach ($orderResult->getProducts() as $product){
+            array_push($order['products'], array(
+                'name' => $product->getName(),
+                'description' => $product->getDescription(),
+                'priceht' => $product->getPriceht(),
+                'pricettc' => $product->getPricettc()
+            ));
+        }
         
         return $this->json($order);
     }
