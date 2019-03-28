@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\www\projectApiTest\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <link href=".css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">C:\www\projectApiTest\src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CustomerController.php.html#12">App\Controller\CustomerController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#14">App\Controller\OrdersController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ProductsController.php.html#12">App\Controller\ProductsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AppFixtures.php.html#8">App\DataFixtures\AppFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CustomersFixtures.php.html#9">App\DataFixtures\CustomersFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/OrdersFixtures.php.html#9">App\DataFixtures\OrdersFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ProductsFixtures.php.html#9">App\DataFixtures\ProductsFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#12">App\Entity\Customers</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#12">App\Entity\Orders</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#12">App\Entity\Products</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CustomersType.php.html#10">App\Form\CustomersType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20190319134301.php.html#13">DoctrineMigrations\Version20190319134301</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CustomersRepository.php.html#15">App\Repository\CustomersRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OrdersRepository.php.html#15">App\Repository\OrdersRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ProductsRepository.php.html#15">App\Repository\ProductsRepository</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/Customers.php.html#12">App\Entity\Customers</a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="Entity/Products.php.html#12">App\Entity\Products</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#12">App\Entity\Orders</a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#14">App\Controller\OrdersController</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/CustomerController.php.html#12">App\Controller\CustomerController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ProductsController.php.html#12">App\Controller\ProductsController</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CustomerController.php.html#24"><abbr title="App\Controller\CustomerController::customers">customers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#102"><abbr title="App\Entity\Products::setPricettc">setPricettc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#92"><abbr title="App\Entity\Orders::getCustomer">getCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#97"><abbr title="App\Entity\Orders::setCustomer">setCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#107"><abbr title="App\Entity\Orders::getProducts">getProducts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#112"><abbr title="App\Entity\Orders::addProduct">addProduct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#121"><abbr title="App\Entity\Orders::removeProduct">removeProduct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#51"><abbr title="App\Entity\Products::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#56"><abbr title="App\Entity\Products::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#61"><abbr title="App\Entity\Products::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#66"><abbr title="App\Entity\Products::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#73"><abbr title="App\Entity\Products::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#78"><abbr title="App\Entity\Products::setDescription">setDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#85"><abbr title="App\Entity\Products::getPriceht">getPriceht</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#90"><abbr title="App\Entity\Products::setPriceht">setPriceht</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#97"><abbr title="App\Entity\Products::getPricettc">getPricettc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#109"><abbr title="App\Entity\Products::getImages">getImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#80"><abbr title="App\Entity\Orders::getDate">getDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#40"><abbr title="App\Kernel::configureRoutes">configureRoutes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OrdersRepository.php.html#23"><abbr title="App\Repository\OrdersRepository::findOrdersInfosById">findOrdersInfosById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OrdersRepository.php.html#17"><abbr title="App\Repository\OrdersRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CustomersRepository.php.html#17"><abbr title="App\Repository\CustomersRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20190319134301.php.html#34"><abbr title="DoctrineMigrations\Version20190319134301::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20190319134301.php.html#20"><abbr title="DoctrineMigrations\Version20190319134301::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20190319134301.php.html#15"><abbr title="DoctrineMigrations\Version20190319134301::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#28"><abbr title="App\Kernel::configureContainer">configureContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#114"><abbr title="App\Entity\Products::setImages">setImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#18"><abbr title="App\Kernel::registerBundles">registerBundles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CustomersType.php.html#25"><abbr title="App\Form\CustomersType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CustomersType.php.html#12"><abbr title="App\Form\CustomersType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#139"><abbr title="App\Entity\Products::removeOrder">removeOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#129"><abbr title="App\Entity\Products::addOrder">addOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Products.php.html#124"><abbr title="App\Entity\Products::getOrders">getOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#85"><abbr title="App\Entity\Orders::setDate">setDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#73"><abbr title="App\Entity\Orders::setPricettc">setPricettc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CustomerController.php.html#57"><abbr title="App\Controller\CustomerController::customer">customer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/OrdersFixtures.php.html#11"><abbr title="App\DataFixtures\OrdersFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#83"><abbr title="App\Entity\Customers::getLastname">getLastname</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#76"><abbr title="App\Entity\Customers::setFirstname">setFirstname</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#71"><abbr title="App\Entity\Customers::getFirstname">getFirstname</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#66"><abbr title="App\Entity\Customers::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#61"><abbr title="App\Entity\Customers::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ProductsFixtures.php.html#11"><abbr title="App\DataFixtures\ProductsFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CustomersFixtures.php.html#11"><abbr title="App\DataFixtures\CustomersFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#95"><abbr title="App\Entity\Customers::getAddress">getAddress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AppFixtures.php.html#10"><abbr title="App\DataFixtures\AppFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ProductsController.php.html#54"><abbr title="App\Controller\ProductsController::product">product</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ProductsController.php.html#24"><abbr title="App\Controller\ProductsController::products">products</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#94"><abbr title="App\Controller\OrdersController::order">order</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#55"><abbr title="App\Controller\OrdersController::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#19"><abbr title="App\Controller\OrdersController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#88"><abbr title="App\Entity\Customers::setLastname">setLastname</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#100"><abbr title="App\Entity\Customers::setAddress">setAddress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#68"><abbr title="App\Entity\Orders::getPricettc">getPricettc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#158"><abbr title="App\Entity\Customers::getOrders">getOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#61"><abbr title="App\Entity\Orders::setPriceht">setPriceht</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#56"><abbr title="App\Entity\Orders::getPriceht">getPriceht</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#51"><abbr title="App\Entity\Orders::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#46"><abbr title="App\Entity\Orders::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#173"><abbr title="App\Entity\Customers::removeOrder">removeOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#163"><abbr title="App\Entity\Customers::addOrder">addOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#148"><abbr title="App\Entity\Customers::setPhone">setPhone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#107"><abbr title="App\Entity\Customers::getPostcode">getPostcode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#143"><abbr title="App\Entity\Customers::getPhone">getPhone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#136"><abbr title="App\Entity\Customers::setCountry">setCountry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#131"><abbr title="App\Entity\Customers::getCountry">getCountry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#124"><abbr title="App\Entity\Customers::setCity">setCity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#119"><abbr title="App\Entity\Customers::getCity">getCity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#112"><abbr title="App\Entity\Customers::setPostcode">setPostcode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ProductsRepository.php.html#17"><abbr title="App\Repository\ProductsRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Kernel.php.html#18"><abbr title="App\Kernel::registerBundles">registerBundles</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#19"><abbr title="App\Controller\OrdersController::index">index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#173"><abbr title="App\Entity\Customers::removeOrder">removeOrder</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Products.php.html#139"><abbr title="App\Entity\Products::removeOrder">removeOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#129"><abbr title="App\Entity\Products::addOrder">addOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#109"><abbr title="App\Entity\Products::getImages">getImages</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#97"><abbr title="App\Entity\Products::getPricettc">getPricettc</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#85"><abbr title="App\Entity\Products::getPriceht">getPriceht</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#73"><abbr title="App\Entity\Products::getDescription">getDescription</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#61"><abbr title="App\Entity\Products::getName">getName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Products.php.html#56"><abbr title="App\Entity\Products::getId">getId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#121"><abbr title="App\Entity\Orders::removeProduct">removeProduct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#112"><abbr title="App\Entity\Orders::addProduct">addProduct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#97"><abbr title="App\Entity\Orders::setCustomer">setCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#92"><abbr title="App\Entity\Orders::getCustomer">getCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#80"><abbr title="App\Entity\Orders::getDate">getDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/CustomerController.php.html#24"><abbr title="App\Controller\CustomerController::customers">customers</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#68"><abbr title="App\Entity\Orders::getPricettc">getPricettc</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#51"><abbr title="App\Entity\Orders::getId">getId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#163"><abbr title="App\Entity\Customers::addOrder">addOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#143"><abbr title="App\Entity\Customers::getPhone">getPhone</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#131"><abbr title="App\Entity\Customers::getCountry">getCountry</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#119"><abbr title="App\Entity\Customers::getCity">getCity</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#107"><abbr title="App\Entity\Customers::getPostcode">getPostcode</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#95"><abbr title="App\Entity\Customers::getAddress">getAddress</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#83"><abbr title="App\Entity\Customers::getLastname">getLastname</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#71"><abbr title="App\Entity\Customers::getFirstname">getFirstname</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Customers.php.html#66"><abbr title="App\Entity\Customers::getId">getId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/ProductsController.php.html#24"><abbr title="App\Controller\ProductsController::products">products</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#94"><abbr title="App\Controller\OrdersController::order">order</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/OrdersController.php.html#55"><abbr title="App\Controller\OrdersController::orders">orders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Orders.php.html#56"><abbr title="App\Entity\Orders::getPriceht">getPriceht</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.7</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 7.5.8</a> at Thu Mar 28 14:46:17 CET 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([16,0,0,0,0,0,0,0,0,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([70,0,0,0,0,0,0,0,0,0,0,1], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,3,"<a href=\"Controller\/CustomerController.php.html#12\">App\\Controller\\CustomerController<\/a>"],[0,7,"<a href=\"Controller\/OrdersController.php.html#14\">App\\Controller\\OrdersController<\/a>"],[0,3,"<a href=\"Controller\/ProductsController.php.html#12\">App\\Controller\\ProductsController<\/a>"],[0,1,"<a href=\"DataFixtures\/AppFixtures.php.html#8\">App\\DataFixtures\\AppFixtures<\/a>"],[0,1,"<a href=\"DataFixtures\/CustomersFixtures.php.html#9\">App\\DataFixtures\\CustomersFixtures<\/a>"],[0,1,"<a href=\"DataFixtures\/OrdersFixtures.php.html#9\">App\\DataFixtures\\OrdersFixtures<\/a>"],[0,1,"<a href=\"DataFixtures\/ProductsFixtures.php.html#9\">App\\DataFixtures\\ProductsFixtures<\/a>"],[0,30,"<a href=\"Entity\/Customers.php.html#12\">App\\Entity\\Customers<\/a>"],[0,21,"<a href=\"Entity\/Orders.php.html#12\">App\\Entity\\Orders<\/a>"],[0,23,"<a href=\"Entity\/Products.php.html#12\">App\\Entity\\Products<\/a>"],[0,2,"<a href=\"Form\/CustomersType.php.html#10\">App\\Form\\CustomersType<\/a>"],[0,5,"<a href=\"Kernel.php.html#12\">App\\Kernel<\/a>"],[0,3,"<a href=\"Migrations\/Version20190319134301.php.html#13\">DoctrineMigrations\\Version20190319134301<\/a>"],[0,1,"<a href=\"Repository\/CustomersRepository.php.html#15\">App\\Repository\\CustomersRepository<\/a>"],[0,2,"<a href=\"Repository\/OrdersRepository.php.html#15\">App\\Repository\\OrdersRepository<\/a>"],[0,1,"<a href=\"Repository\/ProductsRepository.php.html#15\">App\\Repository\\ProductsRepository<\/a>"],[100,2,"<a href=\"Util\/Product.php.html#5\">App\\Util\\Product<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Controller\/CustomerController.php.html#24\">App\\Controller\\CustomerController::customers<\/a>"],[0,1,"<a href=\"Controller\/CustomerController.php.html#57\">App\\Controller\\CustomerController::customer<\/a>"],[0,3,"<a href=\"Controller\/OrdersController.php.html#19\">App\\Controller\\OrdersController::index<\/a>"],[0,2,"<a href=\"Controller\/OrdersController.php.html#55\">App\\Controller\\OrdersController::orders<\/a>"],[0,2,"<a href=\"Controller\/OrdersController.php.html#94\">App\\Controller\\OrdersController::order<\/a>"],[0,2,"<a href=\"Controller\/ProductsController.php.html#24\">App\\Controller\\ProductsController::products<\/a>"],[0,1,"<a href=\"Controller\/ProductsController.php.html#54\">App\\Controller\\ProductsController::product<\/a>"],[0,1,"<a href=\"DataFixtures\/AppFixtures.php.html#10\">App\\DataFixtures\\AppFixtures::load<\/a>"],[0,1,"<a href=\"DataFixtures\/CustomersFixtures.php.html#11\">App\\DataFixtures\\CustomersFixtures::load<\/a>"],[0,1,"<a href=\"DataFixtures\/OrdersFixtures.php.html#11\">App\\DataFixtures\\OrdersFixtures::load<\/a>"],[0,1,"<a href=\"DataFixtures\/ProductsFixtures.php.html#11\">App\\DataFixtures\\ProductsFixtures::load<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#61\">App\\Entity\\Customers::__construct<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#66\">App\\Entity\\Customers::getId<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#71\">App\\Entity\\Customers::getFirstname<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#76\">App\\Entity\\Customers::setFirstname<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#83\">App\\Entity\\Customers::getLastname<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#88\">App\\Entity\\Customers::setLastname<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#95\">App\\Entity\\Customers::getAddress<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#100\">App\\Entity\\Customers::setAddress<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#107\">App\\Entity\\Customers::getPostcode<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#112\">App\\Entity\\Customers::setPostcode<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#119\">App\\Entity\\Customers::getCity<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#124\">App\\Entity\\Customers::setCity<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#131\">App\\Entity\\Customers::getCountry<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#136\">App\\Entity\\Customers::setCountry<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#143\">App\\Entity\\Customers::getPhone<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#148\">App\\Entity\\Customers::setPhone<\/a>"],[0,1,"<a href=\"Entity\/Customers.php.html#158\">App\\Entity\\Customers::getOrders<\/a>"],[0,2,"<a href=\"Entity\/Customers.php.html#163\">App\\Entity\\Customers::addOrder<\/a>"],[0,3,"<a href=\"Entity\/Customers.php.html#173\">App\\Entity\\Customers::removeOrder<\/a>"],[0,1,"<a href=\"Entity\/Orders.php.html#46\">App\\Entity\\Orders::__construct<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#51\">App\\Entity\\Orders::getId<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#56\">App\\Entity\\Orders::getPriceht<\/a>"],[0,1,"<a href=\"Entity\/Orders.php.html#61\">App\\Entity\\Orders::setPriceht<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#68\">App\\Entity\\Orders::getPricettc<\/a>"],[0,1,"<a href=\"Entity\/Orders.php.html#73\">App\\Entity\\Orders::setPricettc<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#80\">App\\Entity\\Orders::getDate<\/a>"],[0,1,"<a href=\"Entity\/Orders.php.html#85\">App\\Entity\\Orders::setDate<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#92\">App\\Entity\\Orders::getCustomer<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#97\">App\\Entity\\Orders::setCustomer<\/a>"],[0,1,"<a href=\"Entity\/Orders.php.html#107\">App\\Entity\\Orders::getProducts<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#112\">App\\Entity\\Orders::addProduct<\/a>"],[0,2,"<a href=\"Entity\/Orders.php.html#121\">App\\Entity\\Orders::removeProduct<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#51\">App\\Entity\\Products::__construct<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#56\">App\\Entity\\Products::getId<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#61\">App\\Entity\\Products::getName<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#66\">App\\Entity\\Products::setName<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#73\">App\\Entity\\Products::getDescription<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#78\">App\\Entity\\Products::setDescription<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#85\">App\\Entity\\Products::getPriceht<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#90\">App\\Entity\\Products::setPriceht<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#97\">App\\Entity\\Products::getPricettc<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#102\">App\\Entity\\Products::setPricettc<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#109\">App\\Entity\\Products::getImages<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#114\">App\\Entity\\Products::setImages<\/a>"],[0,1,"<a href=\"Entity\/Products.php.html#124\">App\\Entity\\Products::getOrders<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#129\">App\\Entity\\Products::addOrder<\/a>"],[0,2,"<a href=\"Entity\/Products.php.html#139\">App\\Entity\\Products::removeOrder<\/a>"],[0,1,"<a href=\"Form\/CustomersType.php.html#12\">App\\Form\\CustomersType::buildForm<\/a>"],[0,1,"<a href=\"Form\/CustomersType.php.html#25\">App\\Form\\CustomersType::configureOptions<\/a>"],[0,3,"<a href=\"Kernel.php.html#18\">App\\Kernel::registerBundles<\/a>"],[0,1,"<a href=\"Kernel.php.html#28\">App\\Kernel::configureContainer<\/a>"],[0,1,"<a href=\"Kernel.php.html#40\">App\\Kernel::configureRoutes<\/a>"],[0,1,"<a href=\"Migrations\/Version20190319134301.php.html#15\">DoctrineMigrations\\Version20190319134301::getDescription<\/a>"],[0,1,"<a href=\"Migrations\/Version20190319134301.php.html#20\">DoctrineMigrations\\Version20190319134301::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20190319134301.php.html#34\">DoctrineMigrations\\Version20190319134301::down<\/a>"],[0,1,"<a href=\"Repository\/CustomersRepository.php.html#17\">App\\Repository\\CustomersRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OrdersRepository.php.html#17\">App\\Repository\\OrdersRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OrdersRepository.php.html#23\">App\\Repository\\OrdersRepository::findOrdersInfosById<\/a>"],[0,1,"<a href=\"Repository\/ProductsRepository.php.html#17\">App\\Repository\\ProductsRepository::__construct<\/a>"],[100,2,"<a href=\"Util\/Product.php.html#9\">App\\Util\\Product::calculateTtc<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
